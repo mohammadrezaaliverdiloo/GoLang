@@ -11,15 +11,15 @@ func main(){
 
     
     if count_of_coins <= 10000{
-        fmt.Print(math.Round(float64((count_of_coins/100)*5)))
+        fmt.Print(math.Floor(float64((count_of_coins/100)*5)))
     }else if count_of_coins > 10000 && count_of_coins <=50000{
         count_of_coins = count_of_coins - 10000
-        fmt.Print((math.Round(float64((count_of_coins/100)*10)+500)))
+        fmt.Print((math.Floor(float64((count_of_coins/100)*10)+500)))
     }else if count_of_coins > 50000 && count_of_coins <=100000{
         count_of_coins = count_of_coins - 50000
-        fmt.Print((math.Round(float64((count_of_coins/100)*15)+4500)))
+        fmt.Print((math.Floor(float64((count_of_coins/100)*15)+4500)))
     }else{
         count_of_coins = count_of_coins - 100000
-        fmt.Print((math.Round(float64((count_of_coins/100)*20)+12000)))
+        fmt.Print((math.Floor(float64((count_of_coins/100)*20)+12000)))
     }
 }
